@@ -13,7 +13,7 @@ const esquemaValidacao = Yup.object().shape({
       .test(
         "check-selecaoAlimentos",
         "Selecione pelo menos um elemento",
-        (array) => array !== null && array.length > 0
+        (array) => array !== null && array!.length > 0
       ),
     });
 
